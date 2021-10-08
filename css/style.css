@@ -1,0 +1,175 @@
+
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* css variables */
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* Start navigation */
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color:var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* End navigation */
+
+/* Start Banner Area */
+
+.site-main .site-banner .site-title h3{
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */ 
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 10px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+/* End About Area */ 
+
+/* Start Qualification Area */
+
+.qualification-area .section_title{
+    font-size : 3.5rem;
+    font-weight: 600;
+    padding-left : 50rem;
+}
+
+.qualification_tabs{
+    display : flex;
+    justify-content: space-evenly;
+}
+
+.qualification_icon{
+    font-size: 1.8rem;
+}
+
+.qualification_button{
+    font-size : 1rem;
+    font-weight : 500;
+    cursor: pointer;
+}
+
+.qualification_button:hover{
+    color : var(--primary-color2);
+}
+
+.qualification_button.qualification_active{
+    color : var(--primary-color2);
+}
+
+.qualification_data{
+    display : grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap : 1.5rem;
+}
+
+.qualification_title{
+    font-size: 1rem;
+    font-weight : 500;
+}
+
+.qualification_subtitle{
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.qualification_calendar{
+    font-size: 0.8rem;
+    color: var(--text-color)
+}
+
+.qualification_rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary-color2);
+    border-radius: 50%;
+}
+
+.qualification_line {
+    display:block;
+    width:1px;
+    height: 100%;
+    background-color: var(--primary-color2);
+    transform: translate(6px,-7px);
+}
+
+/* End Qualification Area */
+
+/* Start Skills Area */
+
+.skills-area .section_title{
+    font-size : 3.5rem;
+    font-weight: 600;
+    padding-left : 45rem;
+}
+
+.skills-area .section_subtitle{
+    padding-left : 45rem;
+}
+
+/* End Skills Area */
+
+/* Start Project Area */
+
+.site-main .project-area {
+    padding : 4rem 0;
+}
+
+.site-main .project-area .grid .project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+/* End Project Area */

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Malek</title>
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
+    
+  <!-- ======================= Start Header Area ======================= -->
+  
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="ms-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-area">À propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#project-area">Projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills-area">Competences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#qualification-area">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- ======================= End Header Area ======================= -->
+
+    <!-- ======================= Start Main Area ======================= -->
+
+    <main class="site-main">
+
+      <!-- ======================= Start Banner Area ======================= -->
+
+      <section class="site-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-sm-12 site-title">
+              <h3 class="title-text pt-5">Bonjour</h3>
+              <h1 class="title-text text-uppercase">Je m'appelle Malek FARDEAU-SPIRE</h1>
+              <h4 class="title-text text-uppercase">Étudiant à l'Université de Technologie de Belfort-Montbéliard</h4>
+              <div class="site-buttons">
+                <div class="d-flex flex-row flex-wrap">
+                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Embauchez moi</button>
+                  <button type="button" class="btn button secondary-button text-uppercase">Télécharger CV</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 banner-image mt-3">
+              <img src="./img/PhotoProfilFondBlanc.jpg" alt="PhotoProfil" class="img-fluid w-100">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= End Banner Area ======================= -->
+
+      <!--  ========================= About Area ==========================  -->
+
+      <section class="about-area" id="about-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="about-image">
+                <img src="./img/UTBM.png" alt="UTBM" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-title">
+              <h2 class="text-uppercase pt-5">
+                <span>Actuellement en</span>
+                <span>recherche de stage</span>
+                <span>de fin d'études</span>
+              </h2>
+              <div class="paragraph py-4 w-75">
+                <p class="para">
+                  En 3ème année de Branche Informatique et après mes 2 ans de cycle préparatoire
+                </p>
+                <p class="para">
+                  Je suis actuellement à la recherche d'un stage de fin d'études en tant 
+                  qu’Ingénieur Informatique (bac +5) d'une durée de 5 mois 
+                  (23 semaines minimum) du 7 février au 15 juillet 2022.
+                </p>
+              </div>
+            <button type="button" class="btn button primary-button text-uppercase">Télécharger CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  ========================= End About Area ==========================  -->
+
+      <!-- ======================= Start Project Area ======================= -->
+
+      <section class="project-area" id="project-area">
+        <div class="container">
+
+          <div class="project-title pb-5">
+            <h1 class="text-uppercase title-h1">Mes Projets Récents</h1>
+          </div>
+
+          <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <div class="img">
+                  <img src="./img/ProjetOpenGL.png" alt="ProjetOpenGL" class="w-100">
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Modélisation et Rendu 3D</h4>
+                  <span class="text-secondary">Avec OpenGL sous Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <div class="img">
+                  <img src="./img/ProjetDrones.png" alt="ProjetDrones" class="w-100">
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Pilotage Autonome de Drones</h4>
+                  <span class="text-secondary">Grâce au langage Multi-Agent SARL et le simulateur Airsim de Microsoft sous Unreal Engine</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= End Project Area ======================= -->
+
+      <!-- ======================= Qualification Area ======================= -->
+
+      <section class="qualification-area" id="qualification-area">
+        <h2 class="section_title">Expériences</h2>
+
+        <div class="qualification_container container" id="qualification_button_group">
+          <div class="qualification_tabs mb-2">
+            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#education">
+              <i class="fas fa-graduation-cap"></i>
+               Scolarité
+            </button>
+            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#professionel">
+              <i class="fas fa-briefcase"></i>
+               Professionel
+            </button>
+          </div>
+
+          <div class="qualification_sections">
+
+            <!-- ======================= Contenu Education ======================= -->
+            <div class="collapse show" id="education" data-bs-parent="#qualification_button_group">
+              <!-- ======================= Education 1 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Etudes d'Ingénieur en Branche Informatique</h3>
+                  <span class="qualification_subtitle">Université de Technologie de Belfort-Montbéliard</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Sept. 2019 - Aujourd'hui
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 2 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Semestre d'Etudes à l'Etranger sur le thème de l'Innovation</h3>
+                  <span class="qualification_subtitle">UTSEUS - Shanghaï</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Fevrier - Juillet 2019
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 3 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">DEUTEC - Diplôme d'Etudes Universitaires de Technologie</h3>
+                  <span class="qualification_subtitle">UTBM - Belfort</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2017 - 2019
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 4 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Bac S-SI Mention Très Bien, spécialité Maths et Mention Européenne Anglais</h3>
+                  <span class="qualification_subtitle">Lycée Thiers - Marseille</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2017
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+          
+            </div>
+
+            <!-- ======================= Contenu Professionel ======================= -->
+            <div class="collapse" id="professionel"  data-bs-parent="#qualification_button_group">
+              <!-- ======================= Professionel 1 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Réalisation d'un projet de plateforme de formation en VR pour les pompes à chaleur</h3>
+                  <span class="qualification_subtitle">BDR Thermea</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Sept. 2021 - Aujourd'hui
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 2 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'assistant ingénieur informatique - Intégration du DPI, ...</h3>
+                  <span class="qualification_subtitle">Index Education (Editeur des logiciels Pronote, Hyperplanning et EDT)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2020 - 2021 (5 mois)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 3 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage ouvrier de 1ère année de Cycle Préparatoire (1 mois)</h3>
+                  <span class="qualification_subtitle">Groupe Peugeot PSA Sochaux (usine d'assemblage de véhicules)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2018 (1 mois)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 4 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'observation de 2nde</h3>
+                  <span class="qualification_subtitle">RG Design (agence de design, conception et développement de sites Web)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2015 (1 semaine)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 5 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'observation de 3ème</h3>
+                  <span class="qualification_subtitle">Thalès à Palaiseau (R&D)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2013 (1 semaine)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+          
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= End Qualification Area ======================= -->
+
+      <!-- ======================= Begin Skills Area ======================= -->
+
+      <section class="skills-area" id="skills-area">
+        <h2 class="section_title"> Mes Compétences</h2>
+        <span class="section_subtitle">Mon niveau technique</span>
+
+        <div class="skills_container container">
+          <!-- ======================= Skills Area 1 ======================= -->
+          <div class="skills-area-left col-lg-6 col-sm-12">
+            <div class="skills-content">
+              <div class="skills_header">
+                <button class="accordion-button skills-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillscontent1">
+                  Programmation
+                </button>
+              </div>
+            </div>
+
+            <div class="skills_list grid accordion-body show" id="skillscontent1">
+              <!-- ======================= Skill 1 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">C++</h3>
+                  <span class="skills_subtitle">+ Cuda (Certification NVIDIA), Qt bases</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 2 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">C</h3>
+                  <span class="skills_subtitle">+ Programmation sur ARM + language UPC (parralèle) </span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 3 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Java</h3>
+                  <span class="skills_subtitle">+ language multi-agents SARL</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 4 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Python</h3>
+                  <span class="skills_subtitle">+ OpenGL, OpenCV</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 5 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Delphi</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 6 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Matlab</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 7 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Unity</h3>
+                  <span class="skills_subtitle">C# : VR, ...</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 8 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Web</h3>
+                  <span class="skills_subtitle">HTML, CSS, JS, Bootstrap, ...</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 9 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Prolog</h3>
+                  <span class="skills_subtitle">Language programmation logique orienté IA</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 55%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ======================= Skills Area 2 ======================= -->
+          <div class="skills-area-right col-lg-6 col-sm-12">
+            <div class="skills-content">
+              <div class="skills_header">
+                <button class="accordion-button collapsed skills-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillscontent2">
+                  Autre
+                </button>
+              </div>
+            </div>
+
+            <div class="skills_list grid accordion-body" id="skillscontent2">
+              <!-- ======================= Skill 1 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Réseau</h3>
+                  <span class="skills_subtitle">Certifications CISCO CCNA1 et CCNA2</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <!-- ======================= Skill 2 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">SQL</h3>
+                  <span class="skills_subtitle">Gestion de bases de données + utilisation Microsoft Access, VBA, ...</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 3 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Blender</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 4 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">UML</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 5 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Gestion de projet</h3>
+                  <span class="skills_subtitle">Gantt, MPM, WBS et PBS, Budget Planning, ...</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ======================= Skills Area 3 ======================= -->
+          <div class="skills-area-right col-lg-6 col-sm-12">
+            <div class="skills-content">
+              <div class="skills_header">
+                <button class="accordion-button collapsed skills-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillscontent3">
+                  Langues
+                </button>
+              </div>
+            </div>
+
+            <div class="skills_list grid accordion-body" id="skillscontent3">
+              <!-- ======================= Skill 1 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Français</h3>
+                  <span class="skills_subtitle">Langue Maternelle</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <!-- ======================= Skill 2 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Anglais</h3>
+                  <span class="skills_subtitle">C2 au Bulats</span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 3 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Allemand</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======================= Skill 4 ======================= -->
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Chinois</h3>
+                  <span class="skills_subtitle"></span>
+
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 30%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+        </div>
+
+        </h2>
+      </section>
+        
+      <!-- ======================= End Skills Area ======================= -->
+    </main>
+
+    <!-- ======================= End Main Area ======================= -->
+
+    <!-- JQuery js file -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="./js/bootstrap.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+    
+  </body>
+</html>
