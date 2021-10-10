@@ -78,6 +78,18 @@
 
 /* End About Area */ 
 
+/* Start Project Area */
+
+.site-main .project-area {
+    padding : 4rem 0;
+}
+
+.site-main .project-area .grid .project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+/* End Project Area */
+
 /* Start Qualification Area */
 
 .qualification-area .section_title{
@@ -153,23 +165,11 @@
 .skills-area .section_title{
     font-size : 3.5rem;
     font-weight: 600;
-    padding-left : 45rem;
+    padding-left : 30rem;
 }
 
 .skills-area .section_subtitle{
-    padding-left : 45rem;
+    padding-left : 30rem;
 }
 
 /* End Skills Area */
-
-/* Start Project Area */
-
-.site-main .project-area {
-    padding : 4rem 0;
-}
-
-.site-main .project-area .grid .project > .title h4{
-    font: normal 700 25px/12px var(--roboto);
-}
-
-/* End Project Area */

@@ -49,7 +49,7 @@
                   <a class="nav-link" href="#qualification-area">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact-area">Contact</a>
                 </li>
               </ul>
             </div>
@@ -75,8 +75,8 @@
               <h4 class="title-text text-uppercase">Étudiant à l'Université de Technologie de Belfort-Montbéliard</h4>
               <div class="site-buttons">
                 <div class="d-flex flex-row flex-wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Embauchez moi</button>
-                  <button type="button" class="btn button secondary-button text-uppercase">Télécharger CV</button>
+                  <a role="button" class="btn button primary-button mr-4 text-uppercase" href="https://www.linkedin.com/in/malek-fardeau-593517181/">Embauchez moi</a>
+                  <a role="button" class="btn button secondary-button text-uppercase" href="/dl/CurriculumVitae.pdf" download>Télécharger CV</a>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@
                   (23 semaines minimum) du 7 février au 15 juillet 2022.
                 </p>
               </div>
-            <button type="button" class="btn button primary-button text-uppercase">Télécharger CV</button>
+            <a role="button" class="btn button primary-button text-uppercase" href="/dl/CurriculumVitae.pdf" download>Télécharger CV</a>
             </div>
           </div>
         </div>
@@ -133,221 +133,288 @@
           </div>
 
           <div class="row grid">
+
+            <!-- ======================= Project 1 ======================= -->
             <div class="col-lg-4 col-md-6 col-sm-12 element-item">
               <div class="project">
-                <div class="img">
-                  <img src="./img/ProjetOpenGL.png" alt="ProjetOpenGL" class="w-100">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectVision">
+                  <img src="./img/ProjetVisionArtificielle.png" alt="ProjetVisionArtificielle" class="w-100">
+                </button>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Projet de Vision Artificielle et Reinforcement Learning</h4>
+                  <span class="text-secondary">d'une IA joueuse de jeu de société en temps réel en Python - Projet en cours</span>
                 </div>
+              </div>
+            </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectVision" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet de Vision Artificielle et Reinforcement Learning d'une IA joueuse de jeu de société en temps réel en Python</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetVisionArtificielle.png" alt="ProjetVisionArtificielle" class="w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Pour ce projet actuellement en cours de réalisation, l'objectif est de mettre en place un adversaire contrôlé par Intelligence Artificielle pour des jeux de société. Après avoir mis en place des technologies de vision artificielle afin de reconnaître les différentes pièces du jeu en utilisant une combinaison de techniques classiques de la vision artficielle et de Deep Learning, il faudra ensuite apprendre à l'IA à jouer en mettant en place des technologies de Reinforcement Learning. Nous utilison pour ce projet avec OpenCV pour la partie traitement d'image ainsi que PyTorch pour la partie apprentissage.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a role="button" class="btn btn-primary" href="https://github.com/Tyriaax/VA50">
+                      <i class="fab fa-github mr-2"></i>
+                      Voir sur Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
+
+            <!-- ======================= Project 2 ======================= -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectOpenGL">
+                  <img src="./img/ProjetOpenGL.png" alt="ProjetOpenGL" class="w-100">
+                </button>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Modélisation et Rendu 3D</h4>
                   <span class="text-secondary">Avec OpenGL sous Python</span>
                 </div>
               </div>
             </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectOpenGL" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet Modélisation et Rendu 3D avec OpenGL sous Python</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetOpenGL.png" alt="ProjetOpenGL" class="img-fluid w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Pour ce projet nous avond dû mettre en place un système de rendu 3D en temps réel complet sous Python à l'aide d'OpenGL. Après avoir réalisé plusieurs modèles 3D sous BLender, nous avons dû mettre en place un moyen de récuper les données des mesh ainsi que du rig sous Python, avant de mettre en place le système de rendu, d'animation, de textures avec l'aide d'OpenGL
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a role="button" class="btn btn-primary" href="https://github.com/tleb/in55-project">
+                      <i class="fab fa-github mr-2"></i>
+                      Voir sur Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
+
+            <!-- ======================= Project 3 ======================= -->
             <div class="col-lg-4 col-md-6 col-sm-12 element-item">
               <div class="project">
-                <div class="img">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectDrone">
                   <img src="./img/ProjetDrones.png" alt="ProjetDrones" class="w-100">
-                </div>
+                </button>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Pilotage Autonome de Drones</h4>
                   <span class="text-secondary">Grâce au langage Multi-Agent SARL et le simulateur Airsim de Microsoft sous Unreal Engine</span>
                 </div>
               </div>
             </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectDrone" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet de pilotage autonome de drônes grâce au langage Multi-Agent SARL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetDrones.png" alt="ProjetDrones" class="img-fluid w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Le but de ce projet était le pilotage autonome de drones dans un environnement avec obstacle. Nous avons pour cela utilisé le language orienté agent SARL afin de mettre en place un système de décision leur permettant de choisir une destination puis de s'y rendre tout en évitant les obsctacles captés par LiDar ainsi que les autres agents drones. La partie simulation du projet à alors été réalisée grâce au simulateur AirSim de Microsoft tournant en temps réel sur Unreal Engine grâce aux APIs fournies
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a role="button" class="btn btn-primary" href="https://github.com/M003T/DroneSimulation_IA51-P20-G7">
+                      <i class="fab fa-github mr-2"></i>
+                      Voir sur Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
           </div>
 
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">
+              Charger plus
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="row grid">
+
+            <!-- ======================= Project 4 ======================= -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectPogo">
+                  <img src="./img/ProjetPogo.png" alt="ProjetPogo" class="w-100">
+                </button>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Intelligence Artificielle pour le jeu "Pogo"</h4>
+                  <span class="text-secondary">Grâce au langage de programmation logique Prolog avec interface graphique en Qt</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectPogo" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet d'Intelligence Artificielle pour le jeu "Pogo" avec Prolog et Qt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetPogo.png" alt="ProjetDrones" class="img-fluid w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Le but de ce projet était de mettre en place une intelligence artificielle "classique" sur le jeu Pogo. Nous avons pour cela utilisé le language de programmation logique Prolog afin de calculer à partir d'un état initial l'ensemble des états atteignables après un déplacement, de leur donner une valeur d'évaluation afin de savoir laquelle approche le plus l'IA de la victoire puis de l'utiliser pour parcourir l'arbre des solutions avec plusieurs tours d'avance afin de séléctionner le coup optimal. Pour ce projet, l'interface graphique a été réalisée sous C++ à l'aide de Qt.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a role="button" class="btn btn-primary" href="https://github.com/tleb/IA41">
+                      <i class="fab fa-github mr-2"></i>
+                      Voir sur Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
+
+            <!-- ======================= Project 5 ======================= -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectTennis">
+                  <img src="./img/ProjetTennis.png" alt="ProjetTennis" class="w-100">
+                </button>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Gestion des réservations d'un court de Tennis</h4>
+                  <span class="text-secondary">Base de donnée SQL avec Interface Graphique grâce à Microsoft Access et VBA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectTennis" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet de Gestion des réservations d'un court de Tennis avec Base de données SQL et interface graphique Microsoft Access + VBA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetTennis.png" alt="ProjetTennis" class="w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Le but de ce projet était de réaliser la gestion complète d'un club de tennis pour un client, de la gestion des membres avec leur inscription et leur cotisation à la gestions des cours et des moniteurs, des réservations des terrains dans le cadre des cours ou encore pour l'organisation de compétitions en équipe. Nous avons dù mettre en place pour cela une base de donnée complète sur Microsoft Access et nous avons pu réaliser de la même manière une interface graphique en utilisant VBA.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
+
+            <!-- ======================= Project 6 ======================= -->
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+              <div class="project">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalProjectAeroport">
+                  <img src="./img/ProjetAeroport.png" alt="ProjetAeroport" class="w-100">
+                </button>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Gestion d'un Aéroport</h4>
+                  <span class="text-secondary">Informatique parallèle en C bas niveau</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======================= Modal Area ======================= -->
+            <div class="modal fade" id="ModalProjectAeroport" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet de Gestion d'un Aéroport avec des notions de parallélisme en C bas niveau</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="img">
+                          <img src="./img/ProjetAeroport.png" alt="ProjetAeroport" class="w-100">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-12 about-title">
+                        Le but de ce projet était de mettre en place la gestion d'un aéroport en C bas niveau. Celà impliquait donc la mise en place de processus et de threads afin de gérer la tour de contôle ainsi les avions, des files de message afin de gérer la communication entre les divers acteurs, des sémaphores afin de garantir l'accès aux pistes, ou encore des segments de mémoire partagée ou des signaux. 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a role="button" class="btn btn-primary" href="https://github.com/M003T/AeroportLO41">
+                      <i class="fab fa-github mr-2"></i>
+                      Voir sur Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ======================= End Modal Area ======================= -->
+
+          </div>
         </div>
       </section>
 
       <!-- ======================= End Project Area ======================= -->
-
-      <!-- ======================= Qualification Area ======================= -->
-
-      <section class="qualification-area" id="qualification-area">
-        <h2 class="section_title">Expériences</h2>
-
-        <div class="qualification_container container" id="qualification_button_group">
-          <div class="qualification_tabs mb-2">
-            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#education">
-              <i class="fas fa-graduation-cap"></i>
-               Scolarité
-            </button>
-            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#professionel">
-              <i class="fas fa-briefcase"></i>
-               Professionel
-            </button>
-          </div>
-
-          <div class="qualification_sections">
-
-            <!-- ======================= Contenu Education ======================= -->
-            <div class="collapse show" id="education" data-bs-parent="#qualification_button_group">
-              <!-- ======================= Education 1 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Etudes d'Ingénieur en Branche Informatique</h3>
-                  <span class="qualification_subtitle">Université de Technologie de Belfort-Montbéliard</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    Sept. 2019 - Aujourd'hui
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Education 2 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Semestre d'Etudes à l'Etranger sur le thème de l'Innovation</h3>
-                  <span class="qualification_subtitle">UTSEUS - Shanghaï</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    Fevrier - Juillet 2019
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Education 3 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">DEUTEC - Diplôme d'Etudes Universitaires de Technologie</h3>
-                  <span class="qualification_subtitle">UTBM - Belfort</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2017 - 2019
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Education 4 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Bac S-SI Mention Très Bien, spécialité Maths et Mention Européenne Anglais</h3>
-                  <span class="qualification_subtitle">Lycée Thiers - Marseille</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2017
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-          
-            </div>
-
-            <!-- ======================= Contenu Professionel ======================= -->
-            <div class="collapse" id="professionel"  data-bs-parent="#qualification_button_group">
-              <!-- ======================= Professionel 1 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Réalisation d'un projet de plateforme de formation en VR pour les pompes à chaleur</h3>
-                  <span class="qualification_subtitle">BDR Thermea</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    Sept. 2021 - Aujourd'hui
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Professionel 2 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Stage d'assistant ingénieur informatique - Intégration du DPI, ...</h3>
-                  <span class="qualification_subtitle">Index Education (Editeur des logiciels Pronote, Hyperplanning et EDT)</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2020 - 2021 (5 mois)
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Professionel 3 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Stage ouvrier de 1ère année de Cycle Préparatoire (1 mois)</h3>
-                  <span class="qualification_subtitle">Groupe Peugeot PSA Sochaux (usine d'assemblage de véhicules)</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2018 (1 mois)
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Professionel 4 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Stage d'observation de 2nde</h3>
-                  <span class="qualification_subtitle">RG Design (agence de design, conception et développement de sites Web)</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2015 (1 semaine)
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-
-              <!-- ======================= Professionel 5 ======================= -->
-              <div class="qualification_data">
-                <div>
-                  <h3 class="qualification_title">Stage d'observation de 3ème</h3>
-                  <span class="qualification_subtitle">Thalès à Palaiseau (R&D)</span>
-                  <div class="qualification_calendar">
-                    <i class="far fa-calendar-alt"></i>
-                    2013 (1 semaine)
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification_rounder"></span>
-                <span class="qualification_line"></span>
-              </div>
-          
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ======================= End Qualification Area ======================= -->
 
       <!-- ======================= Begin Skills Area ======================= -->
 
@@ -355,7 +422,7 @@
         <h2 class="section_title"> Mes Compétences</h2>
         <span class="section_subtitle">Mon niveau technique</span>
 
-        <div class="skills_container container">
+        <div class="skills_container container grid row">
           <!-- ======================= Skills Area 1 ======================= -->
           <div class="skills-area-left col-lg-6 col-sm-12">
             <div class="skills-content">
@@ -550,10 +617,8 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- ======================= Skills Area 3 ======================= -->
-          <div class="skills-area-right col-lg-6 col-sm-12">
+            <!-- ======================= Skills Area 3 ======================= -->
             <div class="skills-content">
               <div class="skills_header">
                 <button class="accordion-button collapsed skills-button" type="button" data-bs-toggle="collapse" data-bs-target="#skillscontent3">
@@ -612,17 +677,236 @@
                 </div>
               </div>
             </div>
-          </div>    
+          </div> 
 
         </div>
-
-        </h2>
       </section>
         
       <!-- ======================= End Skills Area ======================= -->
+
+      <!-- ======================= Qualification Area ======================= -->
+
+      <section class="qualification-area" id="qualification-area">
+        <h2 class="section_title">Expériences</h2>
+
+        <div class="qualification_container container" id="qualification_button_group">
+          <div class="qualification_tabs mb-2">
+            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#education">
+              <i class="fas fa-graduation-cap"></i>
+               Scolarité
+            </button>
+            <button class="btn qualification_button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#professionel">
+              <i class="fas fa-briefcase"></i>
+               Professionel
+            </button>
+          </div>
+
+          <div class="qualification_sections">
+
+            <!-- ======================= Contenu Education ======================= -->
+            <div class="collapse show" id="education" data-bs-parent="#qualification_button_group">
+              <!-- ======================= Education 1 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Etudes d'Ingénieur en Branche Informatique</h3>
+                  <span class="qualification_subtitle">Université de Technologie de Belfort-Montbéliard</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Sept. 2019 - Aujourd'hui
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 2 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Semestre d'Etudes à l'Etranger sur le thème de l'Innovation</h3>
+                  <span class="qualification_subtitle">UTSEUS - Shanghaï</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Fevrier - Juillet 2019
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 3 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">DEUTEC - Diplôme d'Etudes Universitaires de Technologie</h3>
+                  <span class="qualification_subtitle">UTBM - Belfort</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2017 - 2019
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Education 4 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Bac S-SI Mention Très Bien, spécialité Maths et Mention Européenne Anglais</h3>
+                  <span class="qualification_subtitle">Lycée Thiers - Marseille</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2017
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+          
+            </div>
+
+            <!-- ======================= Contenu Professionel ======================= -->
+            <div class="collapse" id="professionel"  data-bs-parent="#qualification_button_group">
+              <!-- ======================= Professionel 1 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Réalisation d'un projet de plateforme de formation en VR pour les pompes à chaleur</h3>
+                  <span class="qualification_subtitle">BDR Thermea</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    Sept. 2021 - Aujourd'hui
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 2 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'assistant ingénieur informatique - Intégration du DPI, ...</h3>
+                  <span class="qualification_subtitle">Index Education (Editeur des logiciels Pronote, Hyperplanning et EDT)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2020 - 2021 (5 mois)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 3 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage ouvrier de 1ère année de Cycle Préparatoire (1 mois)</h3>
+                  <span class="qualification_subtitle">Groupe Peugeot PSA Sochaux (usine d'assemblage de véhicules)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2018 (1 mois)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 4 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'observation de 2nde</h3>
+                  <span class="qualification_subtitle">RG Design (agence de design, conception et développement de sites Web)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2015 (1 semaine)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <!-- ======================= Professionel 5 ======================= -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Stage d'observation de 3ème</h3>
+                  <span class="qualification_subtitle">Thalès à Palaiseau (R&D)</span>
+                  <div class="qualification_calendar">
+                    <i class="far fa-calendar-alt"></i>
+                    2013 (1 semaine)
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+          
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================= End Qualification Area ======================= -->
     </main>
 
     <!-- ======================= End Main Area ======================= -->
+
+    <footer class="footer-area">
+      <div class="container" id="contact-area">
+          <div class="">
+              <h1 class="text-uppercase text-center">Contact</h1>
+              <div class="text-center py-4">
+                  FARDEAU-SPIRE Malek
+              </div>
+              <div class="text-center">
+                <p class="para">
+                  <i class="fas fa-birthday-cake"></i>
+                  25/05/1999 - 22 ans
+                </p>
+                <p class="para">
+                  <i class="fas fa-phone"></i>
+                  06 95 67 96 81
+                </p>
+                <p class="para">
+                  <i class="fas fa-envelope"></i>
+                  malek.fardeau@utbm.fr
+                </p>
+                <p class="para">
+                  <i class="fas fa-home"></i>
+                  2 Rue de Florence - 90000 Belfort
+                </p>
+            </div>
+              <div class="social text-center">
+                  <h5 class="text-uppercase">Mes réseaux</h5>
+                  <a href="https://github.com/M003T"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/malek-fardeau-593517181/"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <!-- JQuery js file -->
     <script src="./js/jquery.js"></script>
