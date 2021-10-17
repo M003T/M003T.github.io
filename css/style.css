@@ -363,5 +363,16 @@
         font-size: 0.75rem;
         line-height: 0.75rem;
     }
+    
+    .accordion-button {
+        background: var(--gradient-color);
+        border-radius: 15px;
+        color: #fff !important;
+        font-weight: bold;
+    }
+    
+    .accordion-button i {
+        margin-right: 10px;
+    }
     /* */
     /* End PF Addons */
